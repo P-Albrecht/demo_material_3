@@ -5,6 +5,11 @@ import { FormsModule } from '@angular/forms';
 import { RouterModule } from '@angular/router';
 import { BrowserModule } from '@angular/platform-browser';
 import { ResizableModule } from 'angular-resizable-element';
+import { NotificationsComponent } from '../../../src/app/notifications/notifications.component';
+import { UserProfileComponent } from '../../../src/app/user-profile/user-profile.component';
+import { TableListComponent } from '../../../src/app/table-list/table-list.component';
+import { DashboardComponent } from '../../../src/app/dashboard/dashboard.component';
+import { UpgradeComponent } from '../../../src/app/upgrade/upgrade.component';
 
 import {MatButtonModule} from '@angular/material/button';
 import {MatInputModule} from '@angular/material/input';
@@ -16,6 +21,11 @@ import {MatSelectModule} from '@angular/material/select';
 @NgModule({
   declarations: [
     EnviromentComponent,
+    NotificationsComponent,
+    UserProfileComponent,
+    TableListComponent,
+    DashboardComponent,
+    UpgradeComponent,
   ],
   imports: [
     BrowserModule, 
