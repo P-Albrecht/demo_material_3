@@ -32,6 +32,16 @@
         [resizeEdges]="{ bottom: true }"
       ></div>
       <div class="enviroment-container">
+        <app-notifications *ngIf="this.component === 'NotificationsComponent'"
+        ></app-notifications>
+        <app-user-profile *ngIf="this.component === 'UserProfileComponent'"
+        ></app-user-profile>
+        <app-table-list *ngIf="this.component === 'TableListComponent'"
+        ></app-table-list>
+        <app-dashboard *ngIf="this.component === 'DashboardComponent'"
+        ></app-dashboard>
+        <app-upgrade *ngIf="this.component === 'UpgradeComponent'"
+        ></app-upgrade>
       </div>
     </div>
   </div>
